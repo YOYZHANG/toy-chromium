@@ -196,7 +196,7 @@ class LayoutBox {
         for (child in this.children) {
             child.layout(d);
             // 跟踪高度，以便每个孩子都在上一个的下方
-            d.content.height = d.content.height + children.dimensions.margin.height;
+            d.content.height = d.content.height + children.dimensions.marginBox().height;
         }
     }
 
